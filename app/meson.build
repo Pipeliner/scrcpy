@@ -26,10 +26,10 @@ if not get_option('crossbuild_windows')
 
     # native build
     dependencies = [
-        dependency('libavformat'),
-        dependency('libavcodec'),
-        dependency('libavutil'),
-        dependency('sdl2'),
+        dependency('libavformat', static: true),
+        dependency('libavcodec', static: true),
+        dependency('libavutil', static: true),
+        dependency('sdl2', static: true),
     ]
 
 else
